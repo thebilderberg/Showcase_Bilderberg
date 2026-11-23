@@ -1,0 +1,123 @@
+.TopBar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #101111ef;
+  backdrop-filter: blur(12px);
+  padding: 16px max(4vw, calc((100vw - 1240px) / 2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.TopBarLeft,
+.TopBarRight {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.TopBar .wordmark {
+  font-size: 20px;
+}
+.guest-label {
+  font-size: 12px;
+  color: var(--muted);
+}
+.app-main {
+  max-width: 1240px;
+  margin: auto;
+  padding: 25px 4vw 40px;
+}
+.app-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.app-nav button {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 10px 17px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+.app-nav button.active {
+  color: #17200e;
+  background: var(--lime);
+  border-color: var(--lime);
+}
+.app-page-heading {
+  font-size: clamp(34px, 5vw, 60px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.055em;
+  margin: 0 0 30px;
+  outline: none;
+}
+.app-welcome {
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #191d16;
+  margin-bottom: 45px;
+}
+.app-welcome p {
+  max-width: 630px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.section-heading.small h2 {
+  font-size: 28px;
+  margin: 0;
+}
+.app-footer {
+  border-top: 1px solid var(--line);
+  margin-top: 55px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.account-note {
+  color: var(--muted);
+  line-height: 1.8;
+  max-width: 620px;
+}
+@media (max-width: 800px) {
+  .section-heading.small {
+    flex-direction: row;
+    align-items: center;
+  }
+  .guest-label {
+    display: none;
+  }
+  .TopBar {
+    padding: 12px 5vw;
+  }
+  .TopBar .wordmark {
+    font-size: 18px;
+  }
+  .app-main {
+    padding: 25px 5vw 35px;
+  }
+  .app-nav {
+    gap: 6px;
+    margin-bottom: 30px;
+  }
+  .app-nav button {
+    padding: 9px 12px;
+    font-size: 12px;
+  }
+  .TopBarRight .ant-space-item:first-child {
+    display: none;
+  }
+  .TopBarRight .ant-btn {
+    font-size: 12px;
+  }
+}
