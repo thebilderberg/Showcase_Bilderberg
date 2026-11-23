@@ -4,7 +4,7 @@
 React, TypeScript, Canvas и SVG. Бот — на Node.js.
 
 ## Развернутый проект можно посмотреть через бота в телеграме:
-@alchemist_flamel_bot
+[@alchemist_flamel_bot](@alchemist_flamel_bot)
 
 ## Запуск
 
